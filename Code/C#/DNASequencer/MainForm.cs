@@ -50,7 +50,7 @@ namespace DNASequencer
             long last_time = 0;
 
             // Read the file and display it line by line.  
-            System.IO.StreamReader file = new System.IO.StreamReader(@"L:\Pictures\Friends\Tiffany\DNA\tiff_dna_edited.txt");
+            System.IO.StreamReader file = new System.IO.StreamReader(filename);
             while ((line = file.ReadLine()) != null)
             {
                 if (line.Equals("")) continue;  // Blank lines
@@ -172,8 +172,8 @@ namespace DNASequencer
                 
                 if (n.midinote >= 0)
                 {
-                   midi.SendMIDI(ChannelCommand.NoteOn, 0, n.midinote, 0x7F);
-                    
+                   midi.SendMIDI(ChannelCommand.NoteOn, 0, n.midinote, 0x7F);                   
+                   //midi.SendMIDI(ChannelCommand.NoteOff, 0, n.midinote, 0x7F);                    
                 }
             }
         }
