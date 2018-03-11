@@ -35,6 +35,7 @@
             this.bStop = new System.Windows.Forms.Button();
             this.lPercentage = new System.Windows.Forms.Label();
             this.lNote = new System.Windows.Forms.Label();
+            this.lAllele = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bGo
@@ -72,8 +73,8 @@
             this.lStatus.Name = "lStatus";
             this.lStatus.Size = new System.Drawing.Size(206, 34);
             this.lStatus.TabIndex = 2;
-            this.lStatus.Text = "--";
-            this.lStatus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lStatus.Text = "Chromosome 2";
+            this.lStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bStop
             // 
@@ -92,10 +93,10 @@
             this.lPercentage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lPercentage.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lPercentage.ForeColor = System.Drawing.Color.White;
-            this.lPercentage.Location = new System.Drawing.Point(465, 127);
+            this.lPercentage.Location = new System.Drawing.Point(522, 127);
             this.lPercentage.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lPercentage.Name = "lPercentage";
-            this.lPercentage.Size = new System.Drawing.Size(206, 34);
+            this.lPercentage.Size = new System.Drawing.Size(96, 34);
             this.lPercentage.TabIndex = 4;
             this.lPercentage.Text = "--";
             this.lPercentage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -109,10 +110,24 @@
             this.lNote.Location = new System.Drawing.Point(242, 127);
             this.lNote.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lNote.Name = "lNote";
-            this.lNote.Size = new System.Drawing.Size(209, 34);
+            this.lNote.Size = new System.Drawing.Size(150, 34);
             this.lNote.TabIndex = 5;
             this.lNote.Text = "--";
             this.lNote.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lAllele
+            // 
+            this.lAllele.BackColor = System.Drawing.Color.Black;
+            this.lAllele.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lAllele.Font = new System.Drawing.Font("OCR A Extended", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lAllele.ForeColor = System.Drawing.Color.White;
+            this.lAllele.Location = new System.Drawing.Point(404, 127);
+            this.lAllele.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lAllele.Name = "lAllele";
+            this.lAllele.Size = new System.Drawing.Size(47, 34);
+            this.lAllele.TabIndex = 6;
+            this.lAllele.Text = "--";
+            this.lAllele.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainForm
             // 
@@ -121,6 +136,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(697, 178);
+            this.Controls.Add(this.lAllele);
             this.Controls.Add(this.lNote);
             this.Controls.Add(this.lPercentage);
             this.Controls.Add(this.bStop);
@@ -147,6 +163,7 @@
         private System.Windows.Forms.Button bStop;
         private System.Windows.Forms.Label lPercentage;
         private System.Windows.Forms.Label lNote;
+        private System.Windows.Forms.Label lAllele;
 
     }
 }

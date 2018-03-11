@@ -61,7 +61,7 @@ namespace DNASequencer
                 try
                 {
                     int chromo = Int32.Parse(snp[1]);
-                    if (chromo != 1) continue; // Only Chromo 1 for now
+                    if (chromo != 2) continue; // Only Chromo 2 for now
                 }
                 catch (Exception)
                 {
@@ -96,7 +96,7 @@ namespace DNASequencer
                 }
 
                 long delta_time = time - last_time;
-                Note n = new Note(time, delta_time, note);
+                Note n = new Note(time, delta_time, note, allele);
                 last_time = time;
 
                 Sequence.Add(n);
@@ -137,14 +137,15 @@ namespace DNASequencer
             return (double) dividend.Ticks / (double) divisor.Ticks;
         }
 
-        private void SafeUpdateGUI(long delay, double percent)
+        private void SafeUpdateGUI(long delay, double percent, String allele)
         {
             this.Invoke(new Action(() => 
             {
                 try
                 {
                     lNote.Text = delay.ToString();
-                    lPercentage.Text = percent.ToString("0.00%");            
+                    lPercentage.Text = percent.ToString("0.00%");
+                    lAllele.Text = allele;
                 }
                 catch (Exception)
                 {
@@ -164,7 +165,7 @@ namespace DNASequencer
 
             foreach (Note n in Sequence)
             {
-                SafeUpdateGUI((long)n.abs_time.TotalMilliseconds, Divide(elapsed_time, total_time));
+                SafeUpdateGUI((long)n.abs_time.TotalMilliseconds, Divide(elapsed_time, total_time), n.allele);
 
                 Thread.Sleep(n.delta_time);
                 elapsed_time += n.delta_time;
