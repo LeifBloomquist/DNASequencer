@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.bGo = new System.Windows.Forms.Button();
             this.bStart = new System.Windows.Forms.Button();
             this.lStatus = new System.Windows.Forms.Label();
@@ -118,7 +119,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::DNASequencer.Properties.Resources._drH35mTLOOXBkKz13ap5qp52X8;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(697, 178);
             this.Controls.Add(this.lNote);
             this.Controls.Add(this.lPercentage);

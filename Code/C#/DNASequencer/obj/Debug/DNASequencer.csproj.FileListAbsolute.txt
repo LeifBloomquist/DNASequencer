@@ -11,3 +11,12 @@ C:\Users\Leif\Arduino-Temp\DNASequencer\DNASequencer\bin\Debug\Sanford.Multimedi
 C:\Users\Leif\Arduino-Temp\DNASequencer\DNASequencer\bin\Debug\Sanford.Multimedia.Timers.dll
 C:\Users\Leif\Arduino-Temp\DNASequencer\DNASequencer\bin\Debug\Sanford.Threading.dll
 C:\Users\Leif\Arduino-Temp\DNASequencer\DNASequencer\obj\Debug\DNASequencer.MainForm.resources
+C:\Leif\GitHub\DNASequencer\Code\C#\DNASequencer\bin\Debug\DNASequencer.exe.config
+C:\Leif\GitHub\DNASequencer\Code\C#\DNASequencer\obj\Debug\DNASequencer.exe
+C:\Leif\GitHub\DNASequencer\Code\C#\DNASequencer\obj\Debug\DNASequencer.pdb
+C:\Leif\GitHub\DNASequencer\Code\C#\DNASequencer\obj\Debug\DNASequencer.csprojResolveAssemblyReference.cache
+C:\Leif\GitHub\DNASequencer\Code\C#\DNASequencer\obj\Debug\DNASequencer.MainForm.resources
+C:\Leif\GitHub\DNASequencer\Code\C#\DNASequencer\obj\Debug\DNASequencer.csproj.GenerateResource.Cache
+C:\Leif\GitHub\DNASequencer\Code\C#\DNASequencer\bin\Debug\DNASequencer.exe
+C:\Leif\GitHub\DNASequencer\Code\C#\DNASequencer\bin\Debug\DNASequencer.pdb
+C:\Leif\GitHub\DNASequencer\Code\C#\DNASequencer\obj\Debug\DNASequencer.Properties.Resources.resources

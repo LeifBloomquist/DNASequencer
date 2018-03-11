@@ -63,9 +63,29 @@ namespace DNASequencer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _drH35mTLOOXBkKz13ap5qp52X8 {
+        internal static System.Drawing.Bitmap dna_blue {
             get {
-                object obj = ResourceManager.GetObject("-drH35mTLOOXBkKz13ap5qp52X8", resourceCulture);
+                object obj = ResourceManager.GetObject("dna-blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dna_red {
+            get {
+                object obj = ResourceManager.GetObject("dna-red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dna_red1 {
+            get {
+                object obj = ResourceManager.GetObject("dna-red1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
